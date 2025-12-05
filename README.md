@@ -8,7 +8,7 @@ It combines template-based project creation with minimal dependency and environm
 
 ---
 
-## ✨ Features
+## Features
 
 - Generate new projects from predefined templates  
 - Automatically create and manage virtual environments  
@@ -20,7 +20,7 @@ It combines template-based project creation with minimal dependency and environm
 
 ---
 
-## 📦 Installation
+## Installation
 
 Install from PyPI:
 
@@ -36,7 +36,7 @@ psycor --help
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Create a new project
 
@@ -75,7 +75,7 @@ This installs the packages and updates your `psycor.toml`.
 
 ---
 
-## 🗂 Project Configuration (`psycor.toml`)
+## Project Configuration (`psycor.toml`)
 
 Each generated project includes a configuration file that defines metadata, dependency groups, and virtual environment behavior.
 
@@ -100,7 +100,7 @@ Psycor relies on this file to manage environments and installation logic.
 
 ---
 
-## 📁 Templates
+## Templates
 
 Psycor templates live under:
 
@@ -124,7 +124,7 @@ You can add additional templates by simply creating new folders under `templates
 
 ---
 
-## 🛠 CLI Commands
+## CLI Commands
 
 | Command | Description |
 |--------|-------------|
@@ -136,7 +136,7 @@ You can add additional templates by simply creating new folders under `templates
 
 ---
 
-## ⚠️ Experimental Status
+## Experimental Status
 
 This project is early-stage (v0.1.0).  
 Behavior and APIs may change as development continues.  
@@ -144,7 +144,7 @@ Feedback and contributions are welcome.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.  
 See the `LICENSE` file for more details.
