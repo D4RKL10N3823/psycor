@@ -5,7 +5,8 @@ build-backend = "hatchling.build"
 [project]
 name = "psycor"
 version = "0.1.0"
-description = "Herramienta CLI para scaffolding de proyectos Python"
+description = "CLI tool for Python project scaffolding and environment management"
+readme = "README.md"
 requires-python = ">=3.9"
 license = { file = "LICENSE" }
 authors = [

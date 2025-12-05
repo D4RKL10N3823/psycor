@@ -138,7 +138,7 @@ You can add additional templates by simply creating new folders under `templates
 
 ## ⚠️ Experimental Status
 
-This project is early-stage (v0.1.x).  
+This project is early-stage (v0.1.0).  
 Behavior and APIs may change as development continues.  
 Feedback and contributions are welcome.
 
