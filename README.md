@@ -4,7 +4,7 @@ Psycor is a lightweight CLI tool for generating Python project scaffolding, mana
 
 It combines template-based project creation with minimal dependency and environment management, offering a consistent workflow for Python, FastAPI, and Flask projects.
 
-> **Status:** Experimental (v0.1.0). API and template structure may evolve.
+> **Status:** Experimental (v0.1.2). API and template structure may evolve.
 
 ---
 
@@ -148,7 +148,7 @@ You can add additional templates by simply creating new folders under `templates
 
 ## Experimental Status
 
-This project is early-stage (v0.1.0).  
+This project is early-stage (v0.1.2).  
 Behavior and APIs may change as development continues.  
 Feedback and contributions are welcome.
 

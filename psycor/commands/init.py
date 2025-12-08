@@ -1,12 +1,12 @@
 import click
 import tomli_w
+import rich_click as click
 from rich.console import Console
-from rich.panel import Panel
 from pathlib import Path
 
 console = Console()
 
-@click.command()
+@click.command(help="Initialize Psycor configuration inside an existing project folder.")
 def init():
     name_dir = Path.cwd().name
 

@@ -3,6 +3,7 @@ import sys
 import os
 import subprocess
 import tomllib 
+import rich_click as click
 from pathlib import Path
 
 @click.command(help="Open a shell with the project's virtual environment activated.")

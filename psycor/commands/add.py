@@ -3,6 +3,7 @@ import subprocess
 import sys
 import tomllib
 import tomli_w
+import rich_click as click
 from pathlib import Path
 
 @click.command(help="Add and install packages into the project virtual environment.")

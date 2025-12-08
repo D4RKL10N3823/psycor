@@ -3,6 +3,7 @@ import subprocess
 import sys
 import venv
 import tomllib
+import rich_click as click
 from pathlib import Path
 
 @click.command(help="Create or update the virtual environment and install project dependencies.")

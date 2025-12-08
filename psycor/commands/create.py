@@ -1,10 +1,9 @@
 import click
-import sys
 import shutil
 import tomllib
 import tomli_w
-from rich.console import Console, Group
 import rich_click as click
+from rich.console import Console, Group
 from rich.panel import Panel
 from pathlib import Path
 
