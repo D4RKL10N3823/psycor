@@ -50,6 +50,15 @@ List available templates:
 psycor create --list
 ```
 
+### OR initialize Psycor in an existing directory
+
+```
+cd my-app
+psycor init
+```
+
+This creates the Psycor configuration file for the project.
+
 ### 2. Install dependencies and create the virtual environment
 
 ```
@@ -130,6 +139,7 @@ You can add additional templates by simply creating new folders under `templates
 |--------|-------------|
 | `psycor create NAME --template T` | Create a new project from a template |
 | `psycor create --list` | List available templates |
+| `psycor init` | Initialize Psycor configuration in an existing directory |
 | `psycor install` | Create the virtual environment and install dependencies |
 | `psycor venv` | Open a shell with the environment activated |
 | `psycor add pkg1 pkg2 ...` | Install and register additional dependencies |
