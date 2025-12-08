@@ -1,7 +1,11 @@
 import click
+import sys
 import shutil
 import tomllib
 import tomli_w
+from rich.console import Console, Group
+import rich_click as click
+from rich.panel import Panel
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent 
@@ -9,26 +13,25 @@ path = BASE_DIR / "templates"
 
 TEMPLATES = []
 
-for c in path.iterdir():
-    TEMPLATES.append(c.name)
+console = Console()
+
+for directory in path.iterdir():
+    TEMPLATES.append(directory.name)
 
 @click.command(help="Create a new project")
 @click.argument("name", required=False)
-@click.option("--template", "-t", required=False, help="Template name to use.")
+@click.option("--template", "-t", required=True, help="Template name to use.")
 @click.option("--list", "list_templates", is_flag=True, help="List available templates..")
 def create(name, template, list_templates):
     if list_templates:
-        click.echo("Templates:")
-        for t in TEMPLATES:
-            click.echo(f" - {t}")
+        template = [f"[magenta]•[/magenta] {template}" for template in TEMPLATES]
+        template_list = Group(*template)
+        console.print(Panel(template_list, title="[green]Templates[/green]"))
         return
     
     if not name:
         raise click.UsageError("You must provide a project name: create NAME [--template ...]")
     
-    if template is None:
-        raise click.ClickException("You must select a template with --template." "Use --list to view options.")
-
     new_path = Path(name)
 
     if new_path.exists():
@@ -52,4 +55,4 @@ def create(name, template, list_templates):
 
     path_toml.write_text(new_content, encoding="utf-8")
 
-    click.echo("Project created.")
+    console.print("\n[green]✔  Project created.[/green]\n")
