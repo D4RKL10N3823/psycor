@@ -19,7 +19,7 @@ for directory in path.iterdir():
 
 @click.command(help="Create a new project")
 @click.argument("name", required=False)
-@click.option("--template", "-t", required=True, help="Template name to use.")
+@click.option("--template", "-t", required=False, help="Template name to use.")
 @click.option("--list", "list_templates", is_flag=True, help="List available templates..")
 def create(name, template, list_templates):
     if list_templates:
